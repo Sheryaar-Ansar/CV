@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+*{
+    margin:0; 
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', 'sans-serif';   
+}
+
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    background: url('./background.jpg') no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.form-box{
+    position: relative;
+    width: 400px;
+    height: 450px;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 40px;
+    border: 2px solid rgba(255, 255, 255, 0.50);
+    backdrop-filter: blur(15px);
+    opacity: 10100%;
+}
+
+h2{
+    font-size: 2em;
+    text-align: center;
+    color: aliceblue;
+}
+
+.input-box{
+    position: relative;
+    margin: 30px 0;
+    width: 310px;
+    border-bottom: 2px solid aliceblue;
+}
+
+.input-box label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    color: aliceblue;
+    font-size: 1em;
+    pointer-events: none;
+    transition: .5s ease;
+}
+
+input:focus ~ label,
+input:valid ~ label{
+    top: -5px;
+}
+
+.input-box input{
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    padding: 0 35px 0 5px;
+    color: aliceblue;
+}
+
+.input-box ion-icon{
+    position: absolute;
+    right: 8px;
+    font-size: 1.2em;
+    top: 50%;
+}
+
+.forgot{
+    display: flex;
+    margin: -15px 0 15px;
+    font-size: .9em;
+    color: aliceblue;
+    justify-content: space-between;
+}
+
+.forgot a{
+    display: flex;
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.forgot a:hover{
+    text-decoration: underline;
+    font-size: 1.1em;
+}
+
+button{
+    width: 100%;
+    height: 40px;
+    border-radius: 40px;
+    border: none;
+    outline: none;
+    background-color: aliceblue;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 600;
+}
+
+.register{
+    font-size: .9em;
+    color: aliceblue;
+    text-align: center;
+    margin: 20px 0 10px;
+}
+
+.register a{
+    font-size: .9em;
+    color: aliceblue;
+    text-decoration: none;
+    font-weight: 600;
+
+}
+
+.register a:hover{
+    text-decoration: underline;
+    font-size: 1.1em;
+}
